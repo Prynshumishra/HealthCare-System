@@ -1,69 +1,70 @@
-# Prescripto Project Setup Guide
+# 🏥 HealthCare System
 
-## Server URLs
+A full-stack healthcare management web application built using the MERN Stack (MongoDB, Express, React, Node.js).
 
-The servers have been started in the background:
+The platform connects patients and doctors while also including a Career Portal for job applications and recruitment management.
 
-- **Backend Server**: http://localhost:4000
-- **Frontend (User)**: http://localhost:5173
-- **Admin Panel**: http://localhost:5174
+---
 
-## Environment Variables Required
+## 🚀 Live Demo
+(Add deployed link here if available)
 
-Create a `.env` file in the `backend` directory with the following variables:
+---
 
-```env
-# MongoDB Connection
-MONGODB_URI=mongodb://localhost:27017/
+## ✨ Features
 
-# JWT Secret (use a strong random string)
-JWT_SECRET=your_jwt_secret_key_here
+### 👨‍⚕️ Doctor Panel
+- Secure Login & JWT Authentication
+- Update Profile (Fees, About, Address)
+- Toggle Availability
+- Manage Appointments
+- Profile Dashboard
 
-# Admin Credentials
-ADMIN_EMAIL=admin@prescripto.com
-ADMIN_PASSWORD=admin123
+### 👤 Patient Panel
+- Browse Doctors by Speciality
+- View Doctor Details
+- Book Appointments
+- Secure Login & Registration
 
-# Cloudinary Configuration (for image uploads)
-CLOUDINARY_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_SECRET_KEY=your_cloudinary_secret_key
+### 🛠 Admin Panel
+- Manage Doctors
+- Manage Appointments
+- View Users
+- Dashboard Overview
 
-# Server Port (optional, defaults to 4000)
-PORT=4000
-```
+### 💼 Career Page (New Feature)
+- Job Listings Page
+- Apply for Open Positions
+- Application Form with Validation
+- Store Applicant Data in Database
+- Admin View of Applications
+- Secure Backend API for Career Submissions
 
-## Quick Start
+### 🔐 Security
+- JWT-based Authentication
+- Protected API Routes
+- Secure Password Hashing
+- Role-Based Access (Admin/Doctor/Patient)
 
-1. **Create `.env` file** in the `backend` directory with the variables above
-2. **Ensure MongoDB is running** (local or remote)
-3. **Set up Cloudinary account** (optional - only needed for image uploads)
-4. **Access the applications:**
-   - Frontend: http://localhost:5173
-   - Admin Panel: http://localhost:5174
-   - Backend API: http://localhost:4000
+---
 
-## Important Notes
+## 🛠 Tech Stack
 
-- If MongoDB is not connected, the backend will fail to start
-- Cloudinary is optional - the app will work but image uploads won't function
-- Admin credentials are set via environment variables
-- All servers are running in the background
+### Frontend
+- React.js
+- Context API
+- Axios
+- Tailwind CSS
 
-## Starting Servers Manually
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Bcrypt for Password Hashing
 
-If you need to restart the servers:
+---
 
-```bash
-# Backend (in backend directory)
-cd backend
-npm start
-
-# Frontend (in frontend directory)  
-cd frontend
-npm run dev
-
-# Admin Panel (in admin directory)
-cd admin
-npm run dev
-```
+## 📂 Project Structure
 
