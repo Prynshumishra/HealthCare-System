@@ -122,6 +122,8 @@ PRESCRIPTO
 5. Mobile App Version
 
 👨‍💻 Author
+
 Priyanshu Mishra
+
 Final Year B.Tech – Information Technology
 Madan Mohan Malaviya University of Technology (MMMUT)
