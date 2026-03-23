@@ -30,8 +30,7 @@ connectCloudinary()
 // app.use(cors())
 
 const allowedOrigins = [
-  process.env.FRONTEND_URL,
-  process.env.ADMIN_URL,
+  
   "https://prescripto-hs.vercel.app/",
   "https://admin-prescripto-hs.vercel.app/",
 ];
