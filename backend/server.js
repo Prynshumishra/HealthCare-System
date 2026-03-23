@@ -34,8 +34,8 @@ app.use(express.urlencoded({ extended: true }))
 const allowedOrigins = [
   process.env.FRONTEND_URL,
   process.env.ADMIN_URL,
-  "http://localhost:5173",   
-  "http://localhost:5174",   
+  "https://prescripto-hs.vercel.app/",
+  "https://admin-prescripto-hs.vercel.app/",
 ];
 
 app.use(cors({
