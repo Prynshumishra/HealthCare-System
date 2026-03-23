@@ -26,9 +26,7 @@ connectCloudinary()
 
 
 
-//middlewares
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+
 // app.use(cors())
 
 const allowedOrigins = [
@@ -49,6 +47,10 @@ app.use(cors({
   credentials: true
 }));
 
+//middlewares
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+app.use(cookieParser()); 
 
 
 app.use("/uploads", express.static("uploads"));
